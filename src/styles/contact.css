@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
+.heading {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+.contact {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  color: forestgreen;
+  font-family: 'Protest Riot', sans-serif;
+  text-transform: uppercase;
+}
+
+.map {
+   padding: 20px;
+  }

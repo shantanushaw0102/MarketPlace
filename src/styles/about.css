@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.grid {
+  padding: 40px 0px;
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 400px;
+    height: 485px;
+    border-radius: 5px;
+    background-color: rgba(118, 96, 255, 0.4);
+    position: absolute;
+    left: 25%;
+    top: -1rem;
+    z-index: -1;
+  }
+}
+.img-style {
+  width: 500px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.company-about {
+  max-width: 100%;
+  height: auto;
+  font-family: "Playfair Display", serif;
+}
+.company-about h2 {
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.company-about p {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.company-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+}
+

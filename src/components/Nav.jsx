@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className="nav-container">
         <div>
           <NavLink to="/">
             <img src={logo} alt="" />
@@ -21,26 +21,26 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleShowNavbar}>
           <GiHamburgerMenu />
         </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/blog">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Services</NavLink>
-            </li>
+            <div className={`nav-elements  ${showNavbar && "active"}`}>
+              <ul>
+                <li>
+                  <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services">Services</NavLink>
+                </li>
 
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
-            </li>
-          </ul>
-        </div>
+                <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/login">Login</NavLink>
+                </li>
+              </ul>
+            </div>
       </div>
     </nav>
   );
