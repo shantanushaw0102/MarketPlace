@@ -21,6 +21,9 @@
   .sub p {
     margin: 5px;
   }
+  .social-icons{
+    font-size: 2rem;
+  }
   
   @media screen and (max-width: 720px) {
     .sub {

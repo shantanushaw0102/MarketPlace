@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   AiFillFacebook,
   AiFillTwitterCircle,
   AiFillInstagram,
-  AiFillApple
+  AiFillApple,
 } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 import "../styles/footer.css";
@@ -22,13 +23,26 @@ const Footer = () => {
           >
             MarketHub
           </h3> */}
-          <img src={logo} alt="" />
-          <p>trueFood is a registered company under Hexaview Tech Pvt. Ltd.</p>
+          <img src={logo} alt="logo" />
+          {/* <p>trueFood is a registered company under Hexaview Tech Pvt. Ltd.</p> */}
           <div className="sub">
             <div>
               <b>Company</b>
-              <p>About</p>
-              <p>Blog</p>
+              <p>
+                <NavLink to="/">Home</NavLink>
+              </p>
+              <p>
+                <NavLink to="/about">About</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Services</NavLink>
+              </p>
+              <p>
+                <NavLink to="/contact">Contact</NavLink>
+              </p>
+              <p>
+                <NavLink to="/login">Login</NavLink>
+              </p>
             </div>
             <div>
               <b>For Foodies</b>
@@ -48,12 +62,12 @@ const Footer = () => {
             </div>
             <div>
               <b>Social links</b>
-              <div>
+              <div className="social-icons">
                 <AiFillFacebook />
                 <AiFillTwitterCircle />
                 <AiFillInstagram />
               </div>
-              <div>
+              <div className="social-icons">
                 <AiFillApple />
                 <FaGooglePlay />
               </div>
