@@ -3,7 +3,7 @@ const ProductItem = [
     id: 1,
     category: "farming",
     name: "tractor",
-    imgUrl:
+    imgUrl: 
       "https://www.valtra.africa/content/dam/public/valtra/en-africa/products/tractors/bh-g4/BH-series-hero.jpg",
     rentPrice: "700.00",
     description:
