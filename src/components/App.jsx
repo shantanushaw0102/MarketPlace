@@ -3,11 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
-import Services from "./Services";
+import Products from "./productpage/Products";
 import Contact from "./Contact";
 import Header from "./Header";
 import HomeLogin from "./LoginFrom/HomeLogin";
 import Footer from "./Footer";
+import ErrorPage from "./ErrorPage";
+import SingleProduct from "./productpage/SingleProduct";
+import Cart from "./Cart";
 import '../styles/globalstyle.css'
 
 
@@ -20,9 +23,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services/>} />
+        <Route path="/products" element={<Products/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<HomeLogin/>} />
+        <Route path="/product/:id" element = {<SingleProduct/>}/>
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router>

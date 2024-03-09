@@ -30,6 +30,7 @@ function CarouselElement() {
   const rentProduct = ProductItem.map((item) => (
     <RentItems
       key={item.id}
+      id ={item.id}
       img={item.imgUrl}
       name={item.name}
       rentPrice={item.rentPrice}

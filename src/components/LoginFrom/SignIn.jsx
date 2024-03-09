@@ -44,7 +44,7 @@ function SignUpForm() {
             <i className="fab fa-linkedin-in" />
           </a>
         </div>
-        <span>or use your email for registration</span>
+        <p>or use your email for registration</p>
         <input
           type="text"
           name="name"

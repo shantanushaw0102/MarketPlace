@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Protest+Revolution&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +58,6 @@ figure {
   justify-content: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-  
 }
 .company-about p {
   width: 100%;
@@ -66,7 +65,6 @@ figure {
   font-family: "Mukta", sans-serif;
   font-weight: 700;
   font-style: italic;
-  
 }
 
 .grid-three-column {
@@ -92,19 +90,18 @@ figure {
   font-family: "Mukta", sans-serif;
   font-weight: 500;
   font-style: italic;
-  
 }
-.history h2{
+.history h2 {
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.mission h2{
+.mission h2 {
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.services h2{
+.services h2 {
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -185,7 +182,7 @@ figure {
   text-transform: capitalize;
 }
 
-.term p {
+.team p {
   font-size: 1.1rem;
   word-spacing: 3px;
   font-family: "Mukta", sans-serif;

@@ -1,26 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function RentItems (props){
+function RentItems(props) {
   return (
-    <div className="card">
-    <img className="product-image" src={props.img} alt="" />
-    <h2>{props.name}</h2>
-    <p className="product-price">  ₹ {props.rentPrice}</p>
-    <p className="product-desc">{props.desc.substring(0,90)}</p>
-  </div>
+    <div key={props.id} className="card">
+      <Link to={`/product/${props.id}`}>
+        <img className="product-image" src={props.img} alt="image" />
+      </Link>
+      <h2>{props.name}</h2>
+      <p className="product-price"> ₹ {props.rentPrice}</p>
+      <p className="product-desc">{props.desc.substring(0, 90)}</p>
+    </div>
   );
-};
+}
 
-
-function NewArrivedItems (props){
+function NewArrivedItems(props) {
   return (
-    <div className="card">
-    <img className="product-image" src={props.img} alt="" />
-    <h2>{props.name}</h2>
-    <p className="product-price">  ₹ {props.rentPrice}</p>
-    <p className="product-desc">{props.desc.substring(0,90)}</p>
-  </div>
+    <div key={props.id} className="card">
+      <Link to={`/product/${props.id}`}>
+        <img className="product-image" src={props.img} alt="image" />
+      </Link>
+      <h2>{props.name}</h2>
+      <p className="product-price"> ₹ {props.rentPrice}</p>
+      <p className="product-desc">{props.desc.substring(0, 90)}</p>
+    </div>
   );
-};
+}
 
-export {RentItems,NewArrivedItems};
+export { RentItems, NewArrivedItems };

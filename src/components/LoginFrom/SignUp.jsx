@@ -41,7 +41,7 @@ function SignInForm() {
             <i className="fab fa-linkedin-in" />
           </a>
         </div>
-        <span>or use your account</span>
+      <p className="comment">  or use your account</p>
         <input
           type="email"
           placeholder="Email"

@@ -14,8 +14,9 @@ import SignUpForm from "./SignUp";
   const containerClass =
     "container " + (type === "signUp" ? "right-panel-active" : "");
   return (
-    <div className="HomeLogin">
-      <h2 className="form-heading"><span>Sign in/up Form</span></h2>
+   
+     <div className="HomeLogin">
+      <h2 className="form-heading"><span>User Login</span></h2>
       <div className={containerClass} id="container">
         <SignUpForm />
         <SignInForm />
@@ -49,6 +50,7 @@ import SignUpForm from "./SignUp";
         </div>
       </div>
     </div>
+   
   );
 }
 export default HomeLogin;
