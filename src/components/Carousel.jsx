@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {RentItems,NewArrivedItems} from "./CarouselCard";
+import { RentItems, NewArrivedItems } from "./CarouselCard";
 import ProductItem from "../database/ProductItem";
 import "../styles/carousel.css";
 
@@ -27,23 +27,26 @@ function CarouselElement() {
       items: 1,
     },
   };
-  const rentProduct = ProductItem.map((item) => (
+  const mostRented = ProductItem.filter((item) => item.most === true);
+  const rentProduct = mostRented.map((item) => (
     <RentItems
       key={item.id}
-      id ={item.id}
-      img={item.imgUrl}
+      id={item.id}
+      img={item.imgUrl1}
       name={item.name}
-      rentPrice={item.rentPrice}
-      desc={item.description}
+      rentPrice={item.price}
+      desc={item.desc}
     />
   ));
-  const newProduct = ProductItem.map((item) => (
+  const newArrival = ProductItem.filter((item) => item.fresh === true);
+  const newProduct = newArrival.map((item) => (
     <NewArrivedItems
       key={item.id}
-      img={item.imgUrl}
+      id={item.id}
+      img={item.imgUrl1}
       name={item.name}
-      rentPrice={item.rentPrice}
-      desc={item.description}
+      rentPrice={item.price}
+      desc={item.desc}
     />
   ));
   return (

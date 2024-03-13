@@ -9,7 +9,7 @@ function RentItems(props) {
       </Link>
       <h2>{props.name}</h2>
       <p className="product-price"> ₹ {props.rentPrice}</p>
-      <p className="product-desc">{props.desc.substring(0, 90)}</p>
+      <p className="product-desc">{props.desc.substring(0, 120)}</p>
     </div>
   );
 }
@@ -22,7 +22,7 @@ function NewArrivedItems(props) {
       </Link>
       <h2>{props.name}</h2>
       <p className="product-price"> ₹ {props.rentPrice}</p>
-      <p className="product-desc">{props.desc.substring(0, 90)}</p>
+      <p className="product-desc">{props.desc.substring(0, 120)}</p>
     </div>
   );
 }

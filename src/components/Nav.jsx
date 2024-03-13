@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FiShoppingCart } from "react-icons/fi";
+
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -11,7 +11,26 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+
+  // const [sticky, setSticky] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setSticky(true);
+  //     } else {
+  //       setSticky(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  
   return (
+    // <nav  className={sticky ? "navbar sticky" : "navbar"}>
     <nav className="navbar">
       <div className="nav-container">
         <div>
@@ -37,12 +56,7 @@ const Navbar = () => {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
-            <li>
-              <NavLink to="/cart" className="navbar-link cart-trolley--link">
-                <FiShoppingCart className="cart-trolley" />
-                <span className="cart-total--item"></span>
-              </NavLink>
-            </li>
+            
             <li>
               <NavLink to="/login">Login</NavLink>
             </li>

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 .grid {
   display: grid;
@@ -10,17 +10,16 @@ body {
 
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
-
 }
 
 .grid-three-column {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-four-column{
-   grid-template-columns: 1fr 1.2fr .5fr .8fr ;
+.grid-four-column {
+  grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr;
 }
 
-.grid-five-column{
+.grid-five-column {
   grid-template-columns: repeat(5, 1fr);
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/contact.css";
+import UserContact from "./UserContact/UserContact";
 
 const Contact = () => {
   return (
     <>
       <div className="heading">
-        <h2 class ="contact">Contact Us</h2>
+        <h2 class="contact">Contact Us</h2>
       </div>
       <div className="map">
         <iframe
@@ -18,6 +19,8 @@ const Contact = () => {
           style={{ border: 0 }}
         ></iframe>
       </div>
+      <h1 className="cf-heading">Send your Quires & FeedBack</h1>
+      <UserContact />
     </>
   );
 };
