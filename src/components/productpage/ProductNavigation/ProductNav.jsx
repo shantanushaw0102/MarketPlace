@@ -9,13 +9,13 @@ const ProductNav = ({ handleInputChange, query }) => {
     <>
       <nav className="p-nav">
         <div className="pnav-container">
-          <span className="p-search-title">Search Product</span>
+          <span className="p-search-title">Search</span>
           <input
             className="p-search"
             type="text"
             onChange={handleInputChange}
             value={query}
-            placeholder="Enter Product Name ...."
+            placeholder="find car,rooms,electronics..."
           />
         </div>
         <div className="icon-container">

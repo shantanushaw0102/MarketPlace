@@ -1,75 +1,30 @@
 import React from "react";
-function SignUpForm() {
-  const [state, setState] = React.useState({
-    name: "",
-    email: "",
-    password: ""
-  });
-  const handleChange = evt => {
-    const value = evt.target.value;
-    setState({
-      ...state,
-      [evt.target.name]: value
-    });
-  };
+import {Link } from "react-router-dom";
+import SignUp from "./SignUp";
+import "./Login.css"; 
 
-  const handleOnSubmit = evt => {
-    evt.preventDefault();
-
-    const { name, email, password } = state;
-    alert(
-      `You are sign up with name: ${name} email: ${email} and password: ${password}`
-    );
-
-    for (const key in state) {
-      setState({
-        ...state,
-        [key]: ""
-      });
-    }
-  };
-
+const SignIn = () => {
   return (
-    <div className="form-container sign-up-container">
-      <form className = "ls-form" onSubmit={handleOnSubmit}>
-        <h1 className="login-h1">Create Account</h1>
-        <div className="social-container">
-          <a href="#" className="social">
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a href="#" className="social">
-            <i className="fab fa-google-plus-g" />
-          </a>
-          <a href="#" className="social">
-            <i className="fab fa-linkedin-in" />
-          </a>
+    <div className="login-container">
+      <h1 className="login-heading">Login</h1>
+      <form action="/login" method="POST">
+        <div className="form-group">
+          <label htmlFor="UserName">Username:</label>
+          <input type="email" id="UserName" name="userName" required />
         </div>
-        <p>or use your email for registration</p>
-        <input
-          type="text"
-          name="name"
-          value={state.name}
-          onChange={handleChange}
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          name="email"
-          value={state.email}
-          onChange={handleChange}
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          name="password"
-          value={state.password}
-          onChange={handleChange}
-          placeholder="Password"
-        />
-        <button className="ls-button">Sign Up</button>
+        <div className="form-group">
+          <label htmlFor="Password">Password:</label>
+          <input type="password" id="Password" name="password" required />
+        </div>
+        <button type="submit" className="btn-login">
+          Login
+        </button>
+        <Link to="/register">
+          <h4 className="signin-page">Not Registered </h4>
+        </Link>
       </form>
     </div>
   );
-}
+};
 
-export default SignUpForm;
+export default SignIn;

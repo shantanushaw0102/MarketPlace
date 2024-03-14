@@ -23,13 +23,13 @@ const Recommended = ({ handleClick }) => {
         />
         <RecommendedButton
           onClickHandler={handleClick}
-          value="tractor"
-          title="Tractor"
+          value="pg room"
+          title="Pg room"
         />
         <RecommendedButton
           onClickHandler={handleClick}
-          value="rc drone"
-          title="Rc Drone"
+          value="drone"
+          title="Drone"
         />
        
       </div>
